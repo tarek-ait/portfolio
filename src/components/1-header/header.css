@@ -1,4 +1,17 @@
 /*all the files will be attached to this styles so be careful */
+
+/*
+    this is the styles of the header 
+    table of content : 
+    - navigation menu
+    - dark and light mode button
+    - in the mobile view we have a button for toggeling the navigation in mobile 
+    - the icons are from icon moon
+    - responsive first break point is 700px 
+*/
+
+
+/*design*/
 header.flex{
     justify-content: space-between;
     padding: 0 2.4rem;
@@ -13,7 +26,7 @@ header.flex nav{
     background-color: var(--bgHeader);
     padding: .77rem 2rem;
     border-radius: 50px;
-    box-shadow: 2px 2px 20px rgba(55, 52, 52, 0.209); /*right bottom spreading */
+    box-shadow: 2px 2px 20px rgba(43, 41, 41, 0.139); /*right bottom spreading */
 }
 
 header ul.flex{
@@ -31,7 +44,7 @@ header ul li a{
 header ul li a:hover{
     color: var(--blue);
     opacity: 1;
-    font-size: .1rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -56,7 +69,7 @@ header .fixed{
 header .fixed ul.modal{
     animation: mymove .7s 1;
     scale: 1;
-    width: 85%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--secondary);
@@ -83,10 +96,58 @@ header .fixed ul.modal li:first-child{
     border: none;
 }
 
-
 header .fixed ul.modal li a{
     font-size: 1rem;
 }
+
+.icon-cross{
+    color: var(--subtitle);
+    font-weight: 400;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.icon-cross:hover{
+    rotate: 180deg;
+    color: crimson;
+    
+}
+
+/* icon button*/
+header .mode,
+header .icon-menu{
+    background-color: var(--bgHeader);
+    box-sizing: border-box;
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    border: 1px solid rgba(244,165,96,0.249);
+    text-align: center;
+    justify-content: center;
+    color: var(--subtitle);
+    transition: all 0.3s ease;
+}
+
+header .mode:hover,
+header .icon-menu:hover{
+    color: var(--title);
+    border: 1px solid rgb(244, 165, 96);
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width:700px){
     header nav{

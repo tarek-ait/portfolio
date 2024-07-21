@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className="flex">
-      <button className="menu" onClick={handleShowModal}>Show model</button>
+      <button className="menu icon-menu flex" onClick={handleShowModal} ></button>
       <div/> 
       <nav>
         <ul className="flex">
@@ -31,14 +31,16 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <button>light</button>
+      <button className="mode flex">
+        <span className="icon-moon-o"></span>
+      </button>
 
        {showModal && (
           <div className="fixed">
             <div>
               <ul className="modal"> 
                 <li>
-                  <button onClick={handleShowModal} className=".icon-cross"></button>
+                  <button onClick={handleShowModal} className="icon-cross"></button>
                 </li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Articles</a></li>

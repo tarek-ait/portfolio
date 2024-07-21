@@ -8,6 +8,7 @@
   --subtitle: rgba(161 161 170);
   --bgHeader: rgb(39 39 42);
   --blue : rgb(93, 188, 252);
+  --iconhover: #d4d4d8; 
 
 }
 /*we make a button that changes the class of the body so we can change the values of the variables*/
@@ -18,6 +19,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -32,11 +34,14 @@ body{
   width: 80%;
   border: 2px solid var(--border);
   background-color: var(--secondary);
+  padding: 0 3rem;
 }
 
 .divider{
   border-bottom: 2px solid var(--border);
   margin: 3rem 0;
+  margin-left: -3rem;
+  width: calc(100% + 3rem + 3rem);
 }
 
 li{
@@ -56,4 +61,35 @@ a{
 
 .border{
   border: 2px solid red;
+}
+
+button{
+  all:unset;
+  cursor: pointer;
+}
+
+button:active{
+  scale: 0.95;
+}
+
+@media (max-width: 1000px){
+  .container{
+    width: 90%;
+    padding: 0 1.7rem;
+  }
+  .divider{
+    margin-left: -1.7rem;
+    width: calc(100% + 1.7rem + 1.7rem);
+  }
+}
+
+@media (max-width: 500px){
+  .container{
+    width: 94%;
+    padding: 0 1.7rem;
+  }
+  .divider{
+    margin-left: -1.7rem;
+    width: calc( 100% + 1.7rem + 1.7rem);
+  }
 }
