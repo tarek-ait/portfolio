@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+/* making css varaibles */
+:root{
+  --primary: #000;
+  --secondary: rgb(24 24 27);
+  --border:rgba(63,63,70,0.4);
+  --title: rgba(244,244,245);
+  --subtitle: rgba(161 161 170);
+  --bgHeader: rgb(39 39 42);
+  --blue : rgb(93, 188, 252);
+
+}
+/*we make a button that changes the class of the body so we can change the values of the variables*/
+.light{
+  --primary: #fff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: var(--primary);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border: 2px solid var(--border);
+  background-color: var(--secondary);
+}
+
+.divider{
+  border-bottom: 2px solid var(--border);
+  margin: 3rem 0;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: initial;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  
+}
+
+.border{
+  border: 2px solid red;
+}
