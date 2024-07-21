@@ -1,0 +1,36 @@
+
+footer.flex{
+    justify-content: space-between;
+    padding-bottom: 1.9rem;
+}
+
+footer.flex ul{
+    gap: 1rem;
+}
+
+footer.flex ul a{
+    color: var(--subtitle);
+    font-size: .9rem;
+    transition: all .3s ease;
+    font-weight: 400;
+}
+
+footer.flex ul a:hover{
+    color: var(--blue);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer.flex p{
+    color: rgb(133 133 122);
+}
+
+@media (max-width:800px) {
+    footer.flex{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+/* costumizing the scroll bar */
