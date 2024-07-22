@@ -1,5 +1,6 @@
-import React from 'react'
+import headerAnimation from '../../../public/animation/headerAnimation.json'
 import './hero.css'
+import Lottie from "lottie-react"
 const Hero = () => {
   return (
     <section className='hero flex'>
@@ -25,8 +26,8 @@ const Hero = () => {
           </div>
          </div>
       </div>
-      <div className="right animation border">
-          animation
+      <div className="right animation">
+      <Lottie className='animation' animationData={headerAnimation} loop={true}/>
       </div>
     </section>
   )

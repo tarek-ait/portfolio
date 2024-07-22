@@ -5,7 +5,7 @@ main.flex{
 }
 
 main.flex .right.flex{
-    // flex-grow: 1;
+    flex-grow: 1;
     flex-wrap: wrap;
     column-gap: 16px;
     row-gap: 2rem;
@@ -28,6 +28,7 @@ main.flex .left button{
     opacity: 0.5;
     border-radius: 5px;
     transition: all 0.3s ease;
+    z-index: 1;
 }
 
 main.flex .left button:hover{
@@ -42,7 +43,13 @@ main.flex .left button.active{
     border: 1px solid var(--blue);
 }
 
+.light main.flex .left button.active{
+    border: 1px solid black;
+}
+
 .card{
+    border-radius: 5px;
+    box-shadow: -1px 1px 1px rgba(0,0,0, 0.16), 1px 1px 1px rgba(0,0,0, 0.16);
     border: 1px solid rgba(93,188,252,0.3);
     transition: all 0.3s ease;
     border-radius: 5px;
@@ -56,6 +63,14 @@ main.flex .left button.active{
     border: 1px solid var(--blue);
 }
 
+.light .card{
+    border: none;
+}
+
+.light .card:hover{
+    background-color: rgb(239, 239, 239);
+    border: none;
+}
 .card img{
     border-radius: 5px;
     height: 180px;
@@ -67,6 +82,7 @@ main.flex .left button.active{
 
 .card .box .title{
     color: var(--title);
+    text-transform: capitalize;
 }
 
 .card .box .body{

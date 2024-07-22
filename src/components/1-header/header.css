@@ -18,6 +18,10 @@ header.flex{
     margin-top: 1.2rem;
 }
 
+header .icon-sun{
+    color: rgb(255, 191, 0);
+}
+
 header button.menu{
     display: none;
 }
@@ -55,7 +59,8 @@ header button{
 header .fixed{
     position: fixed;
     inset: 0;
-    background-color: rgba(40, 40, 40, 0.91);
+    z-index: 1000;
+    background-color: rgba(40, 40, 40, 0.776);
 } 
 
 @keyframes mymove {
@@ -76,6 +81,7 @@ header .fixed ul.modal{
     margin-top: 2rem;
     border-radius: 1rem;
     padding: 1rem 2rem;
+    z-index: 100;
 }
 
 header .fixed ul.modal li{
@@ -128,12 +134,22 @@ header .icon-menu{
     transition: all 0.3s ease;
 }
 
+.light header .mode,
+.light header .icon-menu{
+    border: 1px solid rgba(129, 129, 129, 0.249);
+}
+
 header .mode:hover,
 header .icon-menu:hover{
     color: var(--title);
     border: 1px solid rgb(244, 165, 96);
 }   
 
+.light header .mode:hover,
+.light header .icon-menu:hover{
+    color: var(--title);
+    border: 1px solid rgba(29, 29, 29, 0.489);
+}   
 
 
 

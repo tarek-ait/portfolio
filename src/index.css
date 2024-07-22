@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-
+/* for the animation of our templates we are gonna use the motion framer documentation: https://www.framer.com/motion/ */
+/* for the animated images we got them from the lottie animations https://www.lottieFiles*/
 html {
   scroll-behavior: smooth;
  }
@@ -18,7 +19,14 @@ html {
 }
 /*we make a button that changes the class of the body so we can change the values of the variables*/
 .light{
-  --primary: #fff;
+  --primary: rgb(250, 250, 250);
+  --secondary: rgb(255 255 255);
+  --border:rgba(202,202,202,0.518);
+  --title: rgba(39,39,42);
+  --subtitle: rgb(82 82 91);
+  --bgHeader: rgb(253 253 253);
+  --blue : rgb(0, 149, 2546);
+  --iconhover: #333; 
 }
 
 *{
@@ -71,6 +79,7 @@ a{
 button{
   all:unset;
   cursor: pointer;
+  transition: all .3s ease;
 }
 
 button:active{

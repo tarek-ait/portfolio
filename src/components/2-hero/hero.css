@@ -2,6 +2,7 @@
 /* the left section */
 section.hero{
     margin-top: 3rem;
+    gap: 3rem;
 }
 
 section.hero .left{
@@ -53,10 +54,19 @@ section.hero .icons .icon:hover{
     color: var(--iconhover);
 }
 
+section.hero  .right{
+    width: 100%;
+    translate: 10px;
+}
+section.hero  .right .animation{
+    width:450px;
+}
 
-
-
-
+@media(max-width: 970px){
+    .animation{
+        display: none;
+    }
+}
 
 
 
