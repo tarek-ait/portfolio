@@ -36,19 +36,31 @@ const Header = () => {
       <nav>
         <ul className="flex">
           <li>
-            <a href="#">About</a>
+            <a href="#" onClick={() => {
+                  window.scrollTo({
+                    top:100,
+                    behavior:'smooth'
+                  })
+                }}>About</a>
           </li>
           <li>
-            <a href="#">Articles</a>
-          </li>
+            <a href="#" onClick={() => {
+                  window.scrollTo({
+                    top:400,
+                    behavior:'smooth'
+                  })
+                }}>Projects</a>
+          </li>  
           <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">Speaking</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
+            <a href="#" onClick={() => {
+                  const height = window.innerHeight
+                  console.log(height)
+                  window.scrollTo({
+                    
+                  top:height*4,
+                    behavior:'smooth'
+                  })
+                }}>Contact</a>
           </li>
         </ul>
       </nav>
@@ -68,10 +80,13 @@ const Header = () => {
                 <li>
                   <button onClick={handleShowModal} className="icon-cross"></button>
                 </li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Articles</a></li>
+                <li><a href="#" onClick={() => {
+                  window.scrollTo({
+                    top:100,
+                    behavior:'smooth'
+                  })
+                }}>About</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="#">Speaking</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
             </div>

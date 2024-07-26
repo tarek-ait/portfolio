@@ -32,10 +32,6 @@ const Main = () => {
           setArray(myProjects.filter(item => item.category === "javascript"));
         }} className={type === "javascript" ? "active" : null}>JavaScript</button>
         <button onClick={() => {
-          setType("react");
-          setArray(myProjects.filter(item => item.category === "react"));
-        }} className={type === "react" ? "active" : null}>React</button>
-        <button onClick={() => {
           setType("vue");
           setArray(myProjects.filter(item => item.category === "vue"));
         }} className={type === "vue" ? "active" : null}>Vue.js</button>
@@ -56,19 +52,19 @@ const Main = () => {
                 animate={{ transform: "scale(1)" }}
                 transition={{type: "spring", damping: 10, stiffness:50}}
               >
-                <img width={260} src="../../public/pfp.jpg" />
+                <img width={260} src={ item.image} />
                 <div className="box " style={{ width: "260px" }}>
                   <h2 className="title">{item.title}</h2>
-                  <p className="body">Lorem, ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor..</p>
+                  <p className="body">
+                  {item.content.length > 90 ? `${item.content.substring(0, 90)}...` : item.content}
+                  </p>
                   <div className="flex icons">
                     <div className="first flex">
-                      <div className="icon-link"></div>
-                      <div className="icon-github"></div>
+                      { item.demo &&   <a href={item.demo}><div className="icon-link"></div></a>}
+                      <a href={item.github}>
+                        <div className="icon-github"></div>
+                      </a>
                     </div>
-                    <a href="#" className="link flex">
-                      more
-                      <span className="icon-arrow-right2"></span>
-                    </a>
                   </div>
                 </div>
               </motion.article>

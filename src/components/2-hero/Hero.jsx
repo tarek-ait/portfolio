@@ -6,7 +6,7 @@ const Hero = () => {
     <section className='hero flex'>
       <div className="left">
          <div className="parent-avatar flex">
-          <img src="../../public/pfp.jpg" />
+          <img src="./public/assets/profile.png" />
           <div className='icon-verified'></div>
          </div>
          <h1 className='title'>Computer science student at Esi, Web developer and UI/UX designer</h1>

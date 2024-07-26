@@ -49,6 +49,7 @@ main.flex .left button.active{
 
 .card{
     border-radius: 5px;
+    min-height: 370px;
     box-shadow: -1px 1px 1px rgba(0,0,0, 0.16), 1px 1px 1px rgba(0,0,0, 0.16);
     border: 1px solid rgba(93,188,252,0.3);
     transition: all 0.3s ease;
